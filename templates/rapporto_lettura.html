@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapporto Lettura vs Internet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e0f7fa;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+           
+        }
+        h1 {
+            color: #00796b;
+        }
+        .additional-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .info-box {
+            background-color: #b2dfdb;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rapporto tra Lettura e Utilizzo di Internet</h1>
+        <div class="additional-info">
+            <div class="info-box">
+                <h2>Analisi del Rapporto</h2>
+                <p>Il grafico mostra il rapporto tra il tempo dedicato alla lettura e quello dedicato all'uso di Internet. È interessante osservare come l'uso di Internet abbia influenzato il tempo dedicato alla lettura nel corso degli anni.</p>
+            </div>
+            <div class="info-box">
+                <h2>Conclusioni</h2>
+                <p>Con il crescere dell'uso di Internet, il tempo dedicato alla lettura tradizionale sembra essere diminuito. Questo trend ha implicazioni importanti per l'educazione e la cultura.</p>
+            </div>
+        </div>
+        <img src="{{ grafico_lettura_vs_internet_path }}" alt="Grafico del Rapporto tra Lettura e Internet">
+    </div>
+</body>
+</html>

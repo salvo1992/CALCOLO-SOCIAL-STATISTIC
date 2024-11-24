@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benvenuto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e0f7fa;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+        }
+        h1 {
+            color: #00796b;
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+        }
+        .central-box {
+            background-color: #b2dfdb;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            text-align: left;
+        }
+        .cta-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #00796b;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #004d40;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00796b;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Benvenuto sulla Piattaforma di Analisi Social Media</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('evoluzione_utenti') }}">Evoluzione Social Media (Numero di Utenti)</a>
+            <a href="{{ url_for('evoluzione_ore_medie') }}">Evoluzione Social Media (Ore Medie)</a>
+            <a href="{{ url_for('rapporto_lettura') }}">Rapporto Lettura vs Internet</a>
+            <a href="{{ url_for('conclusione') }}">Conclusione</a>
+        </nav>
+        <div class="description">
+            <p>Questa piattaforma utilizza i dati raccolti sull'utilizzo dei social media per aiutarti a comprendere meglio l'evoluzione del comportamento degli utenti nel corso degli anni. Analizziamo i trend nel numero di utenti, il tempo medio trascorso sulle piattaforme e il rapporto tra utilizzo di Internet e altre attività come la lettura.</p>
+        </div>
+        <div class="central-box">
+            <h2>A cosa serve questa piattaforma?</h2>
+            <p>Il nostro obiettivo è quello di fornire uno strumento di analisi che permetta di comprendere l'impatto crescente dei social media nella vita quotidiana. Con i nostri grafici e le statistiche, potrai esplorare come le diverse piattaforme social si sono evolute e come è cambiato il loro utilizzo negli ultimi anni. L'obiettivo è non solo analizzare i dati, ma anche riflettere sugli effetti di lungo termine che l'utilizzo intensivo dei social media potrebbe avere sul benessere delle persone e sulla società.</p>
+        </div>
+        <a href="{{ url_for('index') }}" class="cta-button">Inizia l'Analisi</a>
+    </div>
+</body>
+</html>
